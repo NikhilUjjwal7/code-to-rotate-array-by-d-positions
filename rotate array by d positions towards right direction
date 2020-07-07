@@ -1,1 +1,31 @@
 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,d,temp=0,b[100];
+    int arr[100]={1,2,3,4,5};
+    for(i=0;i<5;i++)
+    {
+        cout<<arr[i];
+        
+    }
+    cout<<"\n enter no.of places to be shifted ";
+    cin>>d;
+    
+    for(i=0;i<5;i++)
+    {
+        b[(i+d)%5]=arr[i];
+    }
+    
+ 
+    cout<<"\n";
+    for(i=0;i<5;i++)
+    {
+        cout<<b[i];
+        
+    }
+}
